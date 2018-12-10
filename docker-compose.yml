@@ -1,0 +1,7 @@
+web:
+    build: .
+    command: python -u app.py
+    ports:
+        - "80:80"
+    volumes:
+        - .:/flask_compose

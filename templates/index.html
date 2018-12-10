@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    {% autoescape false %}
+    {{ state }}
+    {% endautoescape %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="/static/pastebin.css">
+    <title>Pastebin</title>
+</head>
+
+<body>
+<div id="outerColumnContainer" style="color: #000">
+    <div id="contentColumn">
+        <div class="inside">
+            <h1>一键评教</h1>
+            <form action="/do" method="POST" id="login" name="login">
+                <table>
+                    <tr>
+                        <td colspan="2">点击开始后，请耐心等待网页返回，不要重复点击，导致评教失败</td>
+                    </tr>
+                    <tr>
+                        <th><label for="id_poster">学号:</label></th>
+                        <td><input id="userName" type="text" name="userName" maxlength="30"/><br/></td>
+                    </tr>
+                    <tr>
+                        <th><label for="id_poster">密码:</label></th>
+                        <td><input id="passWord" type="password" name="passWord" maxlength="30"/><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <td><input type="submit" value="开始!"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
