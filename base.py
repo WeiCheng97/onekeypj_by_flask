@@ -110,7 +110,3 @@ def mission(id, passwd):
     ttd['__VIEWSTATEENCRYPTED'] = ""
 
     ses.post(favourite_url, data=ttd)
-
-#
-# if __name__ == "__main__":
-#     mission(username="15416117", password="271519")
